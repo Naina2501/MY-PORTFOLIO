@@ -1,0 +1,156 @@
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(235, 10, 10, 0.5), rgba(0, 0, 255, 0.5)), 
+    url('https://thumbs.dreamstime.com/b/professional-workspace-clean-desk-laptop-notebook-featuring-ample-copy-space-left-side-text-graphics-343814741.jpg');   
+     background-size: cover;
+     background-position: center;
+     color: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.home-text h2{
+    text-align: center;
+    max-width: 800px;
+}
+.home-text .subtitle{
+  font-size: 20px;
+  margin-right: 100px;
+}
+ul li:hover{
+color: rgb(162, 210, 233);
+}
+
+.image-container {
+    --size: 480px;
+    width: 390px;
+    height: 390px;
+    background: linear-gradient(indigo, deeppink);
+    border: 10px solid #fff;
+    border-bottom-width: 50px;
+    box-shadow: 6px 6px 15px #0008;
+    rotate: -5deg;
+    user-select: none;  
+    overflow: hidden;
+    margin:30px;
+  }
+  
+  .manzdev {
+    rotate: -6deg;
+    translate: 0 20px;
+    filter: drop-shadow(6px 0 4px #0006)
+  }
+  ​
+  .container {
+    position: relative;
+    
+    :is(.gradient, img) {
+      position: absolute;
+    }
+  }
+  ​
+  .gradient {
+    background: radial-gradient(red, black);
+    mix-blend-mode: screen;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .manzdev {
+    animation: move 3s infinite alternate;
+  }
+  
+  @keyframes move {
+    0%, 50% { translate: 0 20px; }
+    75%, 100% { translate: 0 350px; }
+  }
+  
+  :is(.css, .tailwind) {
+    width: 256px;
+    z-index: -1;
+  }
+  
+  .css {
+    animation: left-appears 6s infinite alternate 3s;
+    rotate: -8deg;
+  }
+  
+  .tailwind {
+    animation: right-appears 6s infinite alternate;
+  }
+  
+  @keyframes right-appears {
+    50%, 75% { translate: 300px 0; }
+  }
+  
+  @keyframes left-appears {
+    50%, 75% { translate: -260px 25px; }
+  }
+  
+  wrapper{
+      display: flex;
+      }
+      .wrapper .static-txt{
+      color: #c1f9ee;
+      font-size: 40px;
+      font-weight: 400;
+      }
+      .wrapper .dynamic-txts{
+      margin-left: 55px;
+      height: 90px;
+      line-height: 90px;
+      font-weight: bold;
+      overflow: hidden;
+      }
+      .dynamic-txts li{
+      list-style: none;
+      color: #281f2ae2;
+      text-shadow: 4px 4px 4px #3e4043;
+      font-size: 30px;
+      font-weight: 500;
+      position: relative;
+      top: 0;
+      animation: slide 12s steps(4) infinite;
+      }
+      @keyframes slide {
+      100%{
+      top: -360px;
+      }
+      }
+      .dynamic-txts li span{
+      position: relative;
+      margin: 5px 0;
+      line-height: 90px;
+      }
+      
+      @keyframes slider {
+          0%{
+         transform: translate(200);
+          }
+          100%
+          {
+              transform: skewY(-30deg);
+          }
+          }
+  
+  
+.description{
+  margin-left:100px;
+}
+
+/*--Media query--*/
+@media (max-width:850px){
+    .home-text h1{
+        font-size: 30px;
+        max-width: 500px;
+        margin: auto;
+
+    }
+    .home-text p{
+        font-size: 14px;
+        margin: 15px;
+    }
+   
+}

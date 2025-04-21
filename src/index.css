@@ -1,0 +1,11 @@
+
+@import "tailwindcss";
+
+*{
+  font-family: sans-serif;
+}
+
+.Container{
+  padding-left: 10%;
+  padding-right: 10%;
+  }

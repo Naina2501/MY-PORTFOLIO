@@ -1,0 +1,7 @@
+.project{
+    display: grid;
+    flex-wrap: wrap;
+}
+.project .card{
+    height:100px ;
+}
