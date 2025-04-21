@@ -22,7 +22,6 @@ const Header = () => {
             <li><Link to="home" smooth={true} offset={0} duration={500} >Home</Link></li>
             <li><Link to="project" smooth={true} offset={-260} duration={500}>Project</Link></li>
             <li><Link to="about" smooth={true} offset={-150} duration={500}>About-us</Link></li>
-            <li><Link to="testimonials" smooth={true} offset={-260} duration={500}>Campus</Link></li>
             <li><Link to="skills" smooth={true} offset={-150} duration={500}>Skills</Link></li>
             <li className='mt-3 '><Link className='nav-btn text-decoration-none  btn btn-light' to="contact" smooth={true} offset={0} duration={500} >Contact</Link></li>
         </ul>
